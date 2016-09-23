@@ -8,8 +8,8 @@ import android.os.Bundle;
 
 public class MainHomeActivity extends AppCompatActivity {
 
-    ViewPager mViewPager;
-    PagerAdapter mPagerAdapter;
+    private ViewPager mViewPager;
+    private PagerAdapter mPagerAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

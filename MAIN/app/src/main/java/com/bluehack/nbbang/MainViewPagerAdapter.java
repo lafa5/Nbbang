@@ -13,9 +13,11 @@ import android.widget.ImageView;
 
 public class MainViewPagerAdapter extends PagerAdapter {
 
-    Context mContext;
-    LayoutInflater mInflater;
-    int mCardNum = 0;
+    private Integer[] cardImageArr = {R.drawable.master_home_card, R.drawable.master_home_card, R.drawable.master_home_card};
+
+    private Context mContext;
+    private LayoutInflater mInflater;
+    private int mCardNum = 0;
 
     public MainViewPagerAdapter(Context mContext, int mCardNum) {
         this.mContext = mContext;
@@ -41,7 +43,7 @@ public class MainViewPagerAdapter extends PagerAdapter {
 
         ImageView imgView = (ImageView)view.findViewById(R.id.viewpager_child_img);
 
-        imgView.setImageResource(R.drawable.master_home_card);
+        imgView.setImageResource(cardImageArr[position]);
 
         container.addView(view);
 
